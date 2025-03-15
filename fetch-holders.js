@@ -5,6 +5,11 @@ const axios = require('axios');
 const app = express();
 const port = process.env.PORT || 3000;
 
+// Allow requests from your frontend domain
+app.use(cors({
+  origin: 'https://benfootie.github.io'
+}));
+
 app.get('/api/fetch-holders', async (req, res) => {
   const { contractAddress, pageIndex, pageSize } = req.query;
   const apiKey = process.env.BLOCKVISION_API_KEY;

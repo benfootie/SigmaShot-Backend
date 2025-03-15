@@ -1,0 +1,12 @@
+{
+    "name": "monad-backend",
+    "version": "1.0.0",
+    "main": "fetch-holders.js",
+    "dependencies": {
+      "express": "^4.17.1",
+      "axios": "^0.21.1"
+    },
+    "scripts": {
+      "start": "node fetch-holders.js"
+    }
+  }
